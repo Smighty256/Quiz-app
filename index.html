@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./image/question-mark-3245622_640.webp" type="image/x-icon">
+    <title> Quiz App</title>
+</head>
+
+<body>
+    <div class="BigCont" id="bigCont">
+        <audio id="clapping" src="./Audio/mixkit-ending-show-audience-clapping-478.wav"></audio>
+        <audio id="sad" src="./Audio/DVHZS29-sad-trombone.mp3"></audio>
+        <!-- <h1 id="show">
+            <h1 id="show2"></h1>
+        </h1> -->
+        <div class="forBell" id="bell">
+            <i class="fa-sharp fa-regular fa-bells fa-shake"></i>
+            <audio id="audio" src="./Audio/mixkit-church-bell-calling-603.wav"></audio>
+            <h1>Quiz Over</h1>
+        </div>
+        <div class="AreYouSure" id="AreYouSure" hidden>
+            <h3>Are you sure you want to Submit?</h3>
+            <button onclick="YESSUB()">Yes</button>
+            <button onclick="NOSUB()">No</button>
+        </div>
+        <div class="container" id="container">
+            <h1>QuizFiesta</h1>
+            <div class="line"></div>
+            <h2>Instruction:</h2>
+            <ul>
+                <li>Answer all the questions</li>
+                <li>Think carefully before you pick an answer</li>
+                <li>Do not waste time on any question</li>
+                <li>If you change your mind on any question you are free to pick another option</li>
+                <li>You have 60 sec to answer all questions</li>
+            </ul>
+            <button id="button" onclick="start()">Start</button>
+        </div>
+        <div class="container3" id="containerThree">
+            <p id="demo"></p>
+            <div style="display: flex; align-items: center; justify-content: space-around;">
+                <button onclick="Restart()">YES</button>
+                <button onclick="No()">NO</button>
+            </div>
+        </div>
+        <div class="container" id="containerTwo">
+            <div id="time">
+                <i class="fa-duotone fa-spinner-third fa-spin"></i>
+                <p id="fortime">0</p>
+            </div>
+            <h1>QuizFiesta</h1>
+            <div class="line"></div>
+            <h1 id="forAll"></h1>
+            <p id="foroptions"></p>
+            <button class="btn1" id="forButtons" onclick="moveToPreviousQuestion()">Previous</button>
+            <button id="forButtons" onclick="submitAnswer()">Submit</button>
+            <button class="btn1" id="forButtons" onclick="moveToNextQuestion()">Next</button>
+        </div>
+    </div>
+    <!-- <div class="container" id="containerFour">
+        
+        <h1>Simple Quiz</h1>
+        <div class="line"></div>
+        <h1 id="forAll2"></h1>
+        <button id="forButtons" onclick="moveToPreviousQuestion()">Previous</button>
+        <button id="forButtons" onclick="submitAnswer()">Submit</button>
+        <button id="forButtons" onclick="moveToNextQuestion()">Next</button>
+    </div> -->
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>
