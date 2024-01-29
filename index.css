@@ -14,7 +14,7 @@ body {
 
 .BigCont {
     width: 350px;
-    height: 550px;
+    min-height: 550px;
     border: 2px solid black;
     border: none;
 }
